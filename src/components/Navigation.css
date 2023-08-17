@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px;
+    background-color: #fff;
+}
+.header-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #0361ee;
+    font-weight: 600;
+}
+
+.header-container1 ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-container1 ul li {
+    padding: 5px 20px;
+}
+
+Link {
+    text-decoration: none;
+    color: black;
+}
+
+.header-container2 svg{
+    color: #0361ee;
+    font-size: 30px;
+}
