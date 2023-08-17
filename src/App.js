@@ -1,22 +1,18 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import NavigationBar from './components/NavigationBar';
+import BookList from './components/BookList';
+import Categories from './components/Categories';
+import AddBook from './components/Book';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<BookList />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
+      <AddBook />
     </div>
   );
 }
