@@ -26,12 +26,12 @@ form {
 }
 
 .title-input input {
-    margin: 5px 10px 5px 0;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200%; /* Takes up 3/4 of the available space */
-  }
+  margin: 5px 10px 5px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200%; /* Takes up 3/4 of the available space */
+}
 
 #add-book {
   background-color: #007bff;
