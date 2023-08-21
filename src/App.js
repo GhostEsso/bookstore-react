@@ -1,19 +1,24 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux'; // Import Provider
+import store from './redux/store'; // Import your Redux store
 import NavigationBar from './components/NavigationBar';
-import BookList from './components/BookList';
+import BookList from './components/Books';
 import Categories from './components/Categories';
-import AddBook from './components/Book';
+import './App.css';
 
 function App() {
   return (
-    <div className="main">
-      <NavigationBar />
-      <Routes>
-        <Route path="/" element={<BookList />} />
-        <Route path="/Categories" element={<Categories />} />
-      </Routes>
-      <AddBook />
-    </div>
+    <Provider store={store}>
+      {/* Wrap your app with Provider */}
+      <div className="main">
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<BookList />} />
+          <Route path="/Categories" element={<Categories />} />
+        </Routes>
+      </div>
+    </Provider>
   );
 }
 
