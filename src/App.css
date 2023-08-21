@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   overflow-x: hidden;
   font-family: "Courier New", Courier, monospace;
 }
@@ -62,7 +62,7 @@ h2 {
 
 #add-book {
   background-color: #0291ffea;
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   margin-left: 10px;
@@ -93,7 +93,7 @@ h2 {
 
 .remove-button {
   background-color: #ad3636;
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
