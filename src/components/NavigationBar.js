@@ -1,34 +1,20 @@
 import React from 'react';
-import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './Navigation.css';
-import styles from './Component.module.css';
 
-const NavigationBar = () => (
-  <div className="navigation-bar">
-    <header>
-      <div className="header-container1">
-        <div className="logo">Bookstore ET</div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/" className={styles.link}>
-                BOOKS
-              </Link>
-            </li>
-            <li>
-              <Link to="/Catogeries" className={styles.link}>
-                CATEGORIES
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className="header-container2">
-        <FaUserCircle />
-      </div>
-    </header>
-  </div>
-);
+function Nav() {
+  return (
+    <div className="nav_container">
+      <ul className="nav_links">
+        <h2>Bookstore CMS</h2>
+        <Link to="/">
+          <li>BOOKS</li>
+        </Link>
+        <Link to="Categories">
+          <li>CATEGORIES</li>
+        </Link>
+      </ul>
+    </div>
+  );
+}
 
-export default NavigationBar;
+export default Nav;
