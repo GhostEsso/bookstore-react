@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div className="nav_container">
       <ul className="nav_links">
-        <h2>Bookstore CMS</h2>
+        <h2>Bookstore TEP</h2>
         <Link to="/">
           <li>BOOKS</li>
         </Link>
