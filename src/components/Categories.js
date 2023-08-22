@@ -4,12 +4,17 @@ import { CheckStatusFunc } from '../redux/categories/CategoriesSlice';
 
 const Categories = () => {
   const dispatch = useDispatch();
-  const UpdateCategoryStatus = () => dispatch(CheckStatusFunc());
-  const CategoriesStatus = useSelector((state) => state.categoriesReducer);
+  const categoriesStatus = useSelector((state) => state.categoriesReducer.status);
+
+  const updateCategoryStatus = () => {
+    const newStatus = CheckStatusFunc(categoriesStatus);
+    dispatch({ type: 'categories/changeStatus', payload: newStatus });
+  };
+
   return (
     <div>
-      {CategoriesStatus.map((status) => <h1 key={status}>{status}</h1>)}
-      <button type="button" onClick={UpdateCategoryStatus}>Check Status</button>
+      <h1>{categoriesStatus}</h1>
+      <button type="button" onClick={updateCategoryStatus}>Check Status</button>
     </div>
   );
 };
