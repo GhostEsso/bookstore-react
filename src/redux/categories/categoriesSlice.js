@@ -22,4 +22,6 @@ const categoriesSlice = createSlice({
   },
 });
 
+export const { changeStatus } = categoriesSlice.actions; // Destructure the action creators
+
 export default categoriesSlice.reducer;
