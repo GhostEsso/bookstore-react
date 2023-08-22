@@ -123,7 +123,17 @@ In order to run this project you need:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Enhancement Updates]**
+- **User Authentication and Authorization: Enabling user account creation, sign-in, and sign-out functionalities ensures personalized experiences, granting users exclusive access to their own book collections and settings.**
+- **Efficient Shopping Cart: The integration of a user-friendly shopping cart mechanism empowers users to effortlessly add their desired books, subsequently proceeding to a seamless checkout process.**
+- **Secure Payment Processing: Incorporating robust payment processing capabilities assures users a safe and convenient way to finalize their purchases, utilizing credit cards or various payment methods.**
+- **Streamlined Shipping and Delivery: Enabling tracking features for order status and facilitating smooth shipping and delivery procedures ensures customers receive their ordered books in a timely and transparent manner.**
+- **Engaging Reviews and Ratings: Allowing users to express their opinions through reviews and ratings enriches the app's content and aids fellow readers in making informed selections.**
+- **Wishlist Functionality: Providing users with the option to assemble a wishlist enables them to earmark books they intend to purchase in the future, fostering a personalized and organized reading experience.**
+- **Tailored Personalization: Customizing the app to each user's preferences, such as favorite genres or authors, enhances user satisfaction by tailoring content to their unique tastes.**
+- **Vibrant Social Features: Implementing social interactions permits users to forge connections, share book recommendations, and engage in insightful discussions, thereby fostering a vibrant reading community.**
+
+These visionary concepts are merely a glimpse into the future of the Bookstore React app. The inclusion of these enhancements is guided by user needs and desires, ensuring that the app evolves into a dynamic and user-centric platform that caters to the diverse preferences of its audience.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
