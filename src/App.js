@@ -11,13 +11,11 @@ function App() {
   return (
     <Provider store={store}>
       {/* Wrap your app with Provider */}
-      <div className="main">
-        <NavigationBar />
-        <Routes>
-          <Route path="/" element={<BookList />} />
-          <Route path="/Categories" element={<Categories />} />
-        </Routes>
-      </div>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<BookList />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
     </Provider>
   );
 }
