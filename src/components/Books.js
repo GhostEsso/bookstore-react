@@ -24,7 +24,7 @@ function Books() {
             title={book.title}
             author={book.author}
             id={book.item_id}
-            onRemoveBook={handleRemoveBook} // Passez la fonction de suppression comme prop
+            onRemoveBook={handleRemoveBook}
           />
         </div>
       ))}
