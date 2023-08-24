@@ -29,7 +29,7 @@ export default function AddNewBook() {
   };
 
   return (
-    <section>
+    <section className="section_addbook">
       <h2>Add New Book</h2>
       <form>
         <input
@@ -38,6 +38,7 @@ export default function AddNewBook() {
           name="title"
           placeholder="Title"
           onChange={handleChange}
+          className="input-field title-input"
         />
 
         <input
@@ -46,6 +47,7 @@ export default function AddNewBook() {
           name="author"
           placeholder="Author"
           onChange={handleChange}
+          className="input-field author-input"
         />
 
         <input
@@ -54,10 +56,11 @@ export default function AddNewBook() {
           name="category"
           placeholder="Category"
           onChange={handleChange}
+          className="input-field category-input"
         />
 
         <button className="add-button" type="submit" onClick={handleSubmit}>
-          Add Book
+          ADD BOOK
         </button>
       </form>
     </section>
