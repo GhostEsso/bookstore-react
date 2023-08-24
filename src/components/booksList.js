@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteBook, getBooks } from '../redux/api';
 import Book from './Book';
 
-const BooksList = () => {
+export default function BooksList() {
   const { isLoading, isError, value } = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
@@ -11,28 +11,25 @@ const BooksList = () => {
     dispatch(getBooks());
   }, [dispatch]);
 
-  if (isLoading) {
-    return <p>Books loading, please wait!</p>;
-  }
-
-  if (isError) {
-    return <p>Error loading books, please try again!</p>;
-  }
+  const loading = isLoading && <p>Books loading, please wait!</p>;
+  const error = isError && <p>Error loading books, please try again!</p>;
 
   return (
-    <ul className="books-list">
-      {value.map((book) => (
-        <li key={book.item_id}>
-          <Book
-            title={book.title}
-            author={book.author}
-            category={book.category}
-            onRemove={() => dispatch(deleteBook(book.item_id))}
-          />
-        </li>
-      ))}
-    </ul>
+    <>
+      {loading}
+      {error}
+      <ul style={{ listStyle: 'none' }}>
+        {value.map((book) => (
+          <li key={book.item_id}>
+            <Book
+              title={book.title}
+              author={book.author}
+              category={book.category}
+              removeBook={() => dispatch(deleteBook(book.item_id))}
+            />
+          </li>
+        ))}
+      </ul>
+    </>
   );
-};
-
-export default BooksList;
+}
