@@ -1,56 +1,65 @@
-import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
-import { addBook } from '../redux/books/BooksSlice';
+import { addBook } from '../redux/api';
+
+const initialBook = {
+  title: '',
+  author: '',
+  category: '',
+};
 
 export default function AddNewBook() {
-  const [values, setValues] = useState({});
+  const [book, setBook] = useState(initialBook); // Utilisation d'un nom plus explicite
   const dispatch = useDispatch();
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setValues((prevValues) => ({
-      ...prevValues,
+    setBook((prevBook) => ({
+      ...prevBook,
       [name]: value,
     }));
-  }
+  };
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const newBook = {
-      item_id: uuidv4(),
-      ...values,
-    };
+    const newBook = { ...book, item_id: uuidv4() }; // Génération de l'identifiant unique
     dispatch(addBook(newBook));
-    setValues({});
-  }
+    setBook(initialBook);
+  };
 
   return (
-    <div className="form">
+    <section>
       <h2>Add New Book</h2>
       <form>
         <input
+          value={book.title}
           type="text"
           name="title"
           placeholder="Title"
-          className="input-field title-input-a"
-          value={values.title || ''}
           onChange={handleChange}
         />
 
         <input
+          value={book.author}
           type="text"
           name="author"
           placeholder="Author"
-          className="input-field title-input-b"
-          value={values.author || ''}
           onChange={handleChange}
         />
 
-        <button type="submit" id="add-book" onClick={handleSubmit}>
-          ADD BOOK
+        <input
+          value={book.category}
+          type="text"
+          name="category"
+          placeholder="Category"
+          onChange={handleChange}
+        />
+
+        <button className="add-button" type="submit" onClick={handleSubmit}>
+          Add Book
         </button>
       </form>
-    </div>
+    </section>
   );
 }

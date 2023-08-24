@@ -64,7 +64,6 @@ h2 {
   font-weight: 600;
   margin-left: 10px;
   padding: 5px;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
@@ -101,4 +100,57 @@ h2 {
   cursor: pointer;
   background-color: white;
   color: rgb(47, 131, 226);
+}
+
+.remove-button {
+  background-color: #b13434;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.remove-button:hover {
+  background-color: #0a335a;
+}
+
+.book_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.book_info {
+  flex: 1;
+}
+
+.book_title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.book_author,
+.book_category {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.add-button {
+  background-color: #2894a7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.add-button:hover {
+  background-color: #1d89ee;
 }
