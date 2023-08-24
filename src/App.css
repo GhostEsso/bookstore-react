@@ -12,17 +12,18 @@ body {
   min-height: 120vh;
   background-color: #fafafa;
   margin: 5%;
-  padding: 0, 2%;
+  padding: 2%;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.137);
 }
 
 .nav {
   font-size: 35px;
-  color: #0290FF;
+  color: #0290ff;
 }
 
 .category_item {
-  color: #9C9C9C;
+  color: #9c9c9c;
+  font-weight: bold;
 }
 
 h2,
@@ -39,6 +40,7 @@ h2 {
 }
 
 /* styles.css */
+
 /* styles.css */
 .nav_container {
   width: auto;
@@ -60,17 +62,12 @@ h2 {
   align-items: center; /* Ajoutez cette ligne pour aligner verticalement les éléments */
 }
 
-
 .nav_links a {
   font-size: 1.25rem;
   font-weight: 200;
   letter-spacing: 2.5px;
   color: #000;
   text-decoration: none;
-}
-
-.category_item {
-  font-weight: bold;
 }
 
 .user_icon {
@@ -80,8 +77,13 @@ h2 {
 }
 
 .input-field {
+  margin: 5px;
   margin-bottom: 1rem;
   margin-right: 1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .comment-button,
@@ -122,7 +124,7 @@ h2 {
   padding-bottom: 0;
 }
 
-.book_author{
+.book_author {
   font-size: 12px;
   padding-top: 0;
   color: #3f9fee;
@@ -151,14 +153,6 @@ h2 {
 .section_addbook {
   width: 95%;
   margin-left: 35px;
-}
-
-.input-field {
-  padding: 8px;
-  margin: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
 }
 
 .title-input {
