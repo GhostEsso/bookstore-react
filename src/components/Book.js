@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaCircleNotch } from 'react-icons/fa';
 
 export default function Book({
   title,
@@ -26,12 +27,12 @@ export default function Book({
       </div>
       <div className="book_center">
         <div className="progress-circle">
-          <span>
-            <p>
-              <i className="fa-solid fa-circle-notch" />
-              17%
-            </p>
-            <p>completed</p>
+          <span className="circle-content">
+            <FaCircleNotch className="fa" size="4em" />
+            <div>
+              <p className="percent">17%</p>
+              <p className="completed">completed</p>
+            </div>
           </span>
         </div>
       </div>

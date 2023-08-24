@@ -33,8 +33,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": ["src/redux/api.js"],
+        "rules": {
+          "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+        }
+      }
     ]
-  },
+  },  
   "browserslist": {
     "production": [
       ">0.2%",
