@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 
 function Nav() {
   return (
     <div className="nav_container">
       <ul className="nav_links">
-        <h2>Bookstore TEP</h2>
+        <h1 className="nav">Bookstore TEP</h1>
         <Link to="/">
           <li>BOOKS</li>
         </Link>
         <Link to="Categories">
-          <li>CATEGORIES</li>
+          <li className="category_item">CATEGORIES</li>
         </Link>
       </ul>
+      <div className="user_icon">
+        <FaUserCircle />
+      </div>
     </div>
   );
 }

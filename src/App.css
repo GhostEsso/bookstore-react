@@ -9,11 +9,20 @@ body {
 
 .main {
   width: 90%;
-  min-height: 90vh;
-  background-color: #fff;
+  min-height: 120vh;
+  background-color: #fafafa;
   margin: 5%;
-  padding-left: 2%;
+  padding: 0, 2%;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.137);
+}
+
+.nav {
+  font-size: 35px;
+  color: #0290FF;
+}
+
+.category_item {
+  color: #9C9C9C;
 }
 
 h2,
@@ -26,24 +35,31 @@ h4 {
 h2 {
   font-weight: 800;
   font-size: 1.85rem;
-  color: #258fe0ea;
+  color: #c6c6c6;
 }
 
+/* styles.css */
+/* styles.css */
 .nav_container {
-  width: 100%;
+  width: auto;
   margin: auto;
   background-color: #fff;
   border-bottom: 1px solid #f5f6fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Utilisez 'center' pour aligner verticalement */
+  padding: 1rem;
 }
 
 .nav_links {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 3rem;
-  width: 100%;
-  padding: 1rem 0;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Ajoutez cette ligne pour aligner verticalement les éléments */
 }
+
 
 .nav_links a {
   font-size: 1.25rem;
@@ -53,29 +69,14 @@ h2 {
   text-decoration: none;
 }
 
-.nav_links li {
-  list-style: none;
+.category_item {
+  font-weight: bold;
 }
 
-#add-book {
-  background-color: #0291ffea;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 10px;
-  padding: 5px;
-  border-radius: 4px;
+.user_icon {
+  font-size: 30px;
+  color: #0290ff;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-#add-book:hover {
-  background-color: #2f90e6ea;
-  transform: scale(1.05);
-}
-
-#add-book:active {
-  background-color: #0154a8ea;
 }
 
 .input-field {
@@ -83,37 +84,23 @@ h2 {
   margin-right: 1rem;
 }
 
-.title-input-a {
-  width: 30%;
-}
-
-.button-group {
-  display: flex;
-}
-
 .comment-button,
 .remove-button,
 .edit-button {
-  padding: 8px 5px;
+  padding: 8px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   background-color: white;
-  color: rgb(47, 131, 226);
+  color: #3f9fee;
 }
 
 .remove-button {
-  background-color: #b13434;
-  color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 5px;
   cursor: pointer;
   font-size: 14px;
   border-radius: 4px;
-}
-
-.remove-button:hover {
-  background-color: #0a335a;
 }
 
 .book_container {
@@ -121,31 +108,37 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 10px;
-}
-
-.book_info {
-  flex: 1;
+  background-color: white;
+  margin-right: 35px;
 }
 
 .book_title {
   margin: 0;
-  font-size: 18px;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
-.book_author,
+.book_author{
+  font-size: 12px;
+  padding-top: 0;
+  color: #3f9fee;
+}
+
 .book_category {
   margin: 5px 0;
   font-size: 14px;
 }
 
 .add-button {
-  background-color: #2894a7;
+  background-color: #3f9fee;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 30px;
+  margin-left: 15px;
   cursor: pointer;
   font-size: 14px;
   border-radius: 4px;
@@ -153,4 +146,44 @@ h2 {
 
 .add-button:hover {
   background-color: #1d89ee;
+}
+
+.section_addbook {
+  width: 95%;
+  margin-left: 35px;
+}
+
+.input-field {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.title-input {
+  width: 35%;
+}
+
+.author-input {
+  width: 25%;
+}
+
+.category-input {
+  width: 15%;
+}
+
+.update-progress-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.update-progress-button:hover {
+  background-color: #2980b9;
 }
