@@ -38,7 +38,7 @@ A robust search functionality empowers users to find books by title, author, or 
 
 Notably, the app ensures a holistic experience by featuring an order history page, enabling users to review their past purchases. Built with a combination of React, JSX, CSS, and JavaScript, the app stands as a testament to the capabilities of these technologies in crafting engaging web applications.
 
-Currently hosted on Heroku, the live demo offers a firsthand experience of the app's features and functionalities. While the app continues to evolve, it serves as a prime example of how React can be harnessed to create dynamic and interactive web interfaces.
+Currently hosted on Render, the live demo offers a firsthand experience of the app's features and functionalities. While the app continues to evolve, it serves as a prime example of how React can be harnessed to create dynamic and interactive web interfaces.
 
 Future enhancements for the app may include advanced filtering options based on genre, price, and other criteria, the introduction of a wishlist feature, the ability for users to provide ratings and reviews for books, email subscription notifications for new book releases, multi-currency support for purchasing, and even multilingual support for broader accessibility and reach. The Bookstore React App showcases the possibilities of a well-executed React project, promising a seamless journey for all book enthusiasts.
 
@@ -61,6 +61,9 @@ Future enhancements for the app may include advanced filtering options based on 
 </details>
 <details>
   <summary>VS Code</summary>
+</details>
+<details>
+  <summary>API</summary>
 </details>
 <details>
   <summary>Eslint</summary>
