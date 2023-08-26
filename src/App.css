@@ -39,9 +39,6 @@ h2 {
   color: #c6c6c6;
 }
 
-/* styles.css */
-
-/* styles.css */
 .nav_container {
   width: auto;
   margin: auto;
@@ -49,7 +46,7 @@ h2 {
   border-bottom: 1px solid #f5f6fa;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Utilisez 'center' pour aligner verticalement */
+  align-items: center;
   padding: 1rem;
 }
 
@@ -59,7 +56,7 @@ h2 {
   gap: 3rem;
   margin: 0;
   padding: 0;
-  align-items: center; /* Ajoutez cette ligne pour aligner verticalement les éléments */
+  align-items: center;
 }
 
 .nav_links a {
@@ -225,4 +222,90 @@ h2 {
 
 .current-chapter {
   color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+  }
+
+  .nav_container {
+    width: auto;
+    margin: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f6fa;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .book_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+    margin-right: 0;
+    width: 70%;
+  }
+
+  .book_title {
+    font-size: 20px;
+    margin-bottom: 5px; /* Ajouter une marge inférieure */
+  }
+
+  .book_author {
+    font-size: 12px;
+    margin-bottom: 5px; /* Ajouter une marge inférieure */
+  }
+
+  .book_category {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .add-button {
+    font-size: 12px;
+    padding: 6px 20px;
+    margin: 5px 0;
+  }
+
+  .user_icon {
+    display: block; /* Afficher l'icône utilisateur */
+    font-size: 24px;
+    color: #0290ff;
+    cursor: pointer;
+    margin-right: 15px; /* Ajouter une marge droite */
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    padding: 1rem 10px; /* Ajuster le padding */
+  }
+
+  .nav_links a {
+    font-size: 14px;
+  }
+
+  .category_item {
+    display: block;
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid #f5f6fa;
+  }
+
+  .nav_links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 }
